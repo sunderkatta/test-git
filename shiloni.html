@@ -5,13 +5,18 @@
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/6.1.19/browser.js"></script>
    
-   <script type = "text/babel">
-     var x =10;
-
+   <script>
+     var x=10 ;
+function f() {
+	this.x=20;
+var x = 5;
      if (x){
-     	var x = 4;
+     	console.log('inside if');
+     	 x = 4;
      }
-     console.log();
+ }
+var y = new f();
+     console.log(x);
      
    </script>
    <title>Let keyword</title>
